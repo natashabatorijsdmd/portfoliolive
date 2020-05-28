@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="CSS/blog.css">
+    <title>ARCHETYPING</title>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" 
+    rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" 
+    crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header> 
+      <!-- Title of website -->
+      <div class="archetyping">
+        <img src="./assets/myBrand/ArchetypeDesignsKeyboard1.png" width="1000">
+      </div>
+      
+</header>
+
+
+  <main>
+<section class="blogBody">
+  <div class="returnButton">
+  <a href="blog.html">RETURN TO ALL BLOG POSTS</a>
+</div>
+
+  <div class="blogContent">
+<div class="blogTitle">
+  <H1> MURMURATION (of boids) </H1>
+</div>
+<div class="details">
+  <p>26/05/2020 | by Natasha Batorijs </p>
+</div>
+<div class="blogMainImage">
+  <img src="./assets/blogImages/boidsblogimage.png" alt="Murmuration image" width="350">
+</div>
+  <div class="blogText">
+  <p class="subheading">
+   CREATING A FLOCKING SYSTEM 
+   <br> WITH JAVASCRIPT 
+    <br>
+    <br>
+  </p>
+    <p>
+      Flocking behaviour is the reason birds fly together the way starlings do at dusk, and how they seem to know what direction to turn in without hitting each other.
+<br>
+<br>
+A Flocking System (a group following flocking behaviour) can also be created using three dimensional computational geometry by applying 3 behaviours to an object/particle. It is important that I don’t go any further without referencing Craig Reynolds, the man who discovered this equation and created the first digital flocking system.
+<br>
+<br>
+<div class="imageAndCaption">
+  <div><img class="blogImage" src="./assets/blogImages/craigreynolds.png" alt="craig reynolds flocking system"> </div>
+  <p class="imageCaption">Simulated boid flock avoiding cylindrical obstacles (1986) by Craig Reynolds  </p>
+</div>
+<br>
+<br>
+A real bird can fly the way it does because it has very limited vision. It can only see in, let’s say for arguments sake, a 1 meter radius. This does not hinder the bird’s sight, but rather allows fly better because it only has to concentrate on the direction & speed of those surrounding it, whilst not bumping into them. 
+    <br>
+    <br>
+    <p class="specialText"><i>When every bird is concentrating on these three things, it creates the beautiful flocks you see in the sky at dusk.</i></p>
+    <br>
+    <br>
+    o when creating this in Javascript, you take a vector moving from point A to point B and apply these same rules. To get this ‘Boid’ (Craig Reynolds coined this term - it’s a portmanteau of bird and droid in case you didn’t catch on) to make sure it’s going in the right direction, you get it to calculate the average direction of the other boids within it’s ‘1 meter’ radius; and then move in that direction. This is called alignment.
+<br>
+<br>
+A similar equation is done to not bump into others (this is called separation), and to seek out a nearby flock if flying solo or in a small group (this is called cohesion). These equations then add a steering force to the boid, getting it to move smoothly and in a flock. 
+<br>
+<br>
+<div class="videoAndCaption">
+  <video class="blogVideo" controls><source src="./assets/blogImages/BoidVideoshorter.mp4"> </video>
+  <p class="imageCaption">A screen recording of my flocking system being used. The mouse drag adds new boids to the system.</p>
+</div>
+<br>
+<br>
+I wanted to make this as realistic and immersive as possible so added the dusk gradient backdrop, the birdsong, and the realistic hand-drawn boids (they originally were triangles!)
+<br>
+<br>
+<a href="https://editor.p5js.org/nbatorijs/present/O0WLVbgfm">Click here to watch, & drag the mouse to interact 
+  <br> (can be a little slow on mobiles) </a>
+<br>
+<br>
+<a href="https://editor.p5js.org/nbatorijs/sketches/O0WLVbgfm">Click here to view the javascript </a>
+<br>
+<br>
+</p>
+</div>
+</div>
+
+</section>
+    
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="socialMedia"> 
+          <a href="https://www.instagram.com/archetype.designs?igshid=1dfj3dsgnb9ap" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+         <a href="https://www.facebook.com/archetypers" target="_blank"> <i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+      </div>
+      <div class="copyrightInfo"><span><i class="fa fa-copyright" aria-hidden="true"></i>
+        Copyright || Archetype Designs 2020</span></div>
+        <div > <img class="footerLogo" src="./assets/myBrand/plane.png" width="120"> </div>
+  </div>
+  
+  </footer>
+      
+</body>
+</html>

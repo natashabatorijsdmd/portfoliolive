@@ -1,0 +1,273 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+
+@font-face {
+    font-family: 'MainFont';
+    src: url(../hong_kong_hustle/hongkonghustle.ttf);
+    font-style: normal;
+    font-weight: normal;
+  }
+
+  @font-face {
+    font-family: 'paragraph';
+    src: url(../hanken-grotesk-cufonfonts-webfont/HankenGrotesk-Regular.woff);
+    font-style: normal;
+    font-weight: normal;
+  }
+  
+
+  @font-face {
+    font-family: 'blogTitle';
+    src: url(../assets/myBrand/212\ Keyboard.otf);
+    font-style: normal;
+    font-weight: normal;
+  }
+
+  /* link styling */
+
+a:link {
+    text-decoration: none;
+    font: 'paragraph';
+  }
+  
+  a:visited{
+    color: #fefefa;
+    text-decoration: none;
+  }
+  
+  a:hover{
+    color: #0824e0;
+    text-decoration: none;
+  }
+  
+  a:active{
+    color: #e6c6c2;
+    text-decoration: underline;
+  }
+
+  /* header */
+
+
+
+header{
+    padding: 20px;
+    background-color: #d0db97;
+    position: relative;
+    width: 100%;
+  }
+
+  .archetyping{
+    display: flex;
+    max-width: 100%;
+    margin-top: 50px;
+    justify-content: center;
+
+}
+
+.returnButton{
+    padding: 10px;
+    font-size: 20px;
+    background-color: transparent;
+    font-family: 'Paragraph';
+    color: grey;
+    text-align: center;
+}
+
+.blogMainImage{
+    display: block;
+    text-align: center;
+    margin: 50px;
+}
+
+.blogMainImage > img{
+    border: #0824e0 2px solid;
+}
+
+.imageAndCaption{
+  max-width: 80%;
+  justify-content: center;
+  margin: auto auto;
+}
+
+.blogImage{
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    max-width: 100%;
+    justify-content: center;
+}
+
+.blogImage > img {
+    border: #0824e0 2px solid;
+}
+
+.imageCaption{
+    padding-top: 1px;
+        font-family: 'paragraph';
+        color: #b4b9ba;
+        font-size: 12px;
+        text-align: center;
+}
+
+.blogVideo{
+  max-width: 100%;
+  }
+  
+  /* blog post body */
+  .blogBody {
+      background-color: #d0db97;
+      height: auto;
+    width: 100%;
+    height: auto;
+    }
+  
+   /* blog content */
+    .blogContent{
+    background-color: #fffbf5;
+    padding-bottom: 50px;
+    width: 80%;
+    height: fit-content;
+    margin: auto;
+    margin-top: 100px;
+    padding-bottom: 100px;
+    }
+  
+    .blogTitle{
+        max-width: 70%;
+        font-family: 'paragraph';
+        color: #d0db97;
+        font-size: 30px;
+        text-align: center;
+        margin: auto;
+        padding-top: 50px;
+
+    }
+
+    .details{
+        padding-top: 5px;
+        font-family: 'paragraph';
+        letter-spacing: 2px;
+        color: #b4b9ba;
+        font-size: 12px;
+        text-align: center;
+    }
+  
+    .blogText{
+        max-width: 70%;
+        font-family: 'paragraph';
+        font-size: 17px;
+        color: #333333;
+        letter-spacing: 1px;
+        text-align: left;
+        margin: auto;
+        line-height: 22.1px;
+        padding-left: 40px;
+        padding-right: 40px;
+
+    }
+
+    .specialText{
+        font-size: 18px;
+        color: #e6c6c2;
+        text-align: left;
+        margin: auto;
+        line-height: 22.1px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .subheading{
+        letter-spacing: 3px;
+        font-size: 25px;
+        color: #6d7275;
+        text-align: center;
+    }
+
+    /* footer */
+
+footer{
+    padding-top: 15px;
+    background-color: #e6c6c2;
+  }
+  
+  .socialMedia{
+    font-size: 30px;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .socialMedia > a{
+    text-decoration: none;
+    color:#fefefa;
+    transition: 0.2s color;
+  }
+  
+  .socialMedia > a:hover{
+    color: #0824e0;
+  }
+  
+  .copyrightInfo{
+    text-decoration: none;
+    font-family: Helvetica;
+    font-size: 15px;
+    color:#fefefa;
+    text-align: center;
+  }
+
+  .footerLogo{
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+
+  @media only screen and (max-width: 480px){  
+
+    .blogMainImage img{
+      max-width: 80%;
+    }
+
+    .blogTitle{
+      font-size: 18px;
+      text-align: center;
+      margin: auto;
+      padding-top: 50px;
+  }
+
+  .subheading{
+    letter-spacing: 3px;
+    font-size: 13px;
+    color: #6d7275;
+    text-align: center;
+}
+
+.blogText{
+  font-size: 12px;
+  max-width: 70%;
+  padding: 0px;
+
+}
+
+.specialText{
+  font-size: 15px;
+  color: #e6c6c2;
+  text-align: left;
+  margin: auto;
+  line-height: 22.1px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.blogContent{
+  margin-top: 50px;
+  }
+
+  .returnButton{
+    font-size: 14px;
+  }
+
+  }

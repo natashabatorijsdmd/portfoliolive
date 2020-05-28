@@ -1,0 +1,1391 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'MainFont';
+  src: url(../hong_kong_hustle/hongkonghustle.ttf);
+  font-style: normal;
+  font-weight: normal;
+}
+
+
+/* link styling */
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited{
+  color: #0824e0;
+  text-decoration: none;
+}
+
+a:hover{
+  color: #d0db97;
+  text-decoration: none;
+}
+
+a:active{
+  color: #e6c6c2;
+  text-decoration: underline;
+}
+
+/* logo at top of page */
+header{
+  padding: 20px;
+  background-color:#e6c6c2 ;
+  position: fixed;
+  z-index: 200;
+  top: 0px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: auto;
+  grid-template-areas: "left right";
+  width: 100%;
+  margin-top: none;
+}
+
+.logo{
+  max-width: 700px;
+  overflow: hidden;
+  background-color: #e6c6c2;
+}
+
+.frontLogo{
+  max-width: 1000px;
+  overflow: hidden;
+  background-color: #e6c6c2;
+}
+
+.burgerIconContainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.burgerIcon{
+  color: #0824e0;
+  border: none;
+  background-color: transparent;
+  font-size: 55px;
+  margin-right: 30px;
+  display: block;
+  grid-area: right;
+}
+
+.burgerIcon:hover{
+  cursor: pointer;
+  font-size: 60px;
+}
+
+/* homepage body */
+body {
+    background-color: #e6c6c2;
+    height: auto;
+  }
+
+  ul {
+    list-style-type: none;
+    float: right;
+    margin: 0;
+  padding: 0;
+  width: 100px;
+  }
+
+/* styling of nav bar section */
+  nav{
+    position: absolute;
+    z-index: 5000;
+    top: 0;
+    right: 0;
+    width: 650px;
+    height: auto;
+    display: block;
+    margin-top: 10px;
+    padding: 40px;
+    background: #fefefa;
+  /* transitions */
+  transition: right 0.5s ease;
+
+  /* border */
+  border: solid #0824e0 2px;
+  border-right: none;
+  }
+
+  .navPageTitles{
+    color: #0824e0;
+    cursor: pointer;
+    text-decoration: none;;
+    font-family: 'MainFont';
+    font-size: 23px;
+    word-spacing: 5px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    align-items: left;
+  }
+
+  .closeButton{
+    color: #0824e0;
+    font-size: 30px;
+  }
+
+  .closeButton:hover{
+    cursor: pointer;
+  }
+
+  
+  .mainnav-closed{
+    right: -650px;
+  }
+
+  /* .mainnav{
+    transition: right 0.5s ease;
+  } */
+
+
+  /* nav bar 'branding' dropdown */
+
+  /* overall style of dropdown page*/
+  .dropdown{
+    padding: 0px;
+    font-family: Helvetica;
+    font-size: small;
+    font-weight: lighter;
+    /* background-color: #d0db97;
+    border: solid #0824e0 0.5px; */
+
+  }
+
+  .dropdown-closed{
+    display: none;
+  }
+
+  .navPageTriggersActive{
+    color: #d0db97;
+    text-decoration: underlinez;
+    }
+
+  .navBarTitle{
+    font-family: 'mainFont';
+    color: #0824e0;
+    padding-bottom: 10px;
+    font-size: 25px;
+    letter-spacing: 1px;
+  }
+
+  .navBarTitle:hover{
+    color: #d0db97;
+  } 
+
+  /* each horizontal feature of image and text */
+  .previews{
+    font-size: small;
+    font-weight: normal;
+    display: flex;
+    margin-bottom: 25px;
+    padding-right: 35px;
+    
+  }
+ /* each image in dropdown */
+  .previewimage{
+    border: #0824e0 solid;
+    background-color: #e6c6c2;
+    border-width: 1px;
+    opacity: 0.8;
+    height: 150px;
+    width: 150px;
+
+  }
+
+  /* all text featured on right hand side of a preview */
+  .previewtextright{
+    margin-left: 55px;
+    margin-right: 0px;
+    padding-top: 30px;
+    word-spacing: normal;
+    text-align: left;
+    font-weight: bold;
+    color: #e6c6c2;
+    line-height: 20px;
+  }
+
+  /* all text featured on left hand side of a preview */
+  .previewtextleft{
+    margin-left: 0px;
+    margin-right: 55px;
+    padding-top: 30px;
+    word-spacing: normal;
+    text-align: left;
+    font-weight: bold;
+    color: #e6c6c2;
+    line-height: 20px;
+  }
+
+  /* view all button at top of dropdown menu */
+  #viewall{
+    display: block;
+    margin-top: 30px;
+   margin-bottom: 30px;
+    font-family: 'mainFont';
+    font-size: 15px;
+    color: #e6c6c2;
+    word-spacing: normal;
+    text-align: center;
+
+  }
+
+  .viewall{
+    color: #e6c6c2;
+  }
+
+  /* contact dropdown styling */
+
+  #contactDropdown{
+    height: 65vh;
+  }
+
+  .contactNavImageContainer{
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  .contactNavText{
+    display: flex;
+    text-align: center;
+    font-family: 'MainFont';
+    letter-spacing: 2px;
+    font-size: 20px;
+    color: #d0db97;
+    justify-content: center;
+    margin-bottom: 5px;
+    margin-top: 100px;
+  }
+
+  .contactNavCTA{
+    margin-top: 100px;
+    text-align: center;
+    font-family: 'MainFont';
+    font-size: 100px;
+    color: #0824e0;
+  }
+
+  #contactNavIcons{
+    color: #d0db97;
+  }
+
+  #contactNavIcons:hover{
+    color: #0824e0;
+  }
+
+  #phoneNumber{
+    text-align: center;
+    margin-right: 50px;
+  }
+
+  .contentsection{
+    width: 100%;
+    height: auto;
+  }
+
+  /* landing page section */
+
+  #homeSection1{
+    background-color: #e6c6c2;
+    height: auto;
+    margin-top: 100px;
+  }
+
+  .homePage{
+    width: 80%;
+    height: auto;
+    max-width: 1007px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 50px;
+    margin-top: 150px;
+  }
+
+  .homePage :hover{
+    cursor: pointer;
+  }
+
+  .homepageImage{
+    max-height: 550px;
+  }
+
+  /* bottom section of homepage */
+  #homeSection2{
+    background-image: url(../assets/myBrand/pattern3.png);
+    background-size: contain;
+    image-rendering: auto;
+    background-color: #fefefa;
+    background-repeat: repeat;
+    width: 100%;
+    height: auto;
+    display: block;
+    grid-row: 3;
+    padding: 0%;
+  }
+
+  /* Images of how to fold a paper airplane on homepage */
+  .foldingImages{
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    text-align: center;
+    max-width: 90%;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "left center right"
+  "left center center right";
+  justify-content: space-between;
+  align-content: bottom;
+  }
+
+  .origami{
+    max-height: 450px;
+    margin-top: 50px;
+    opacity: 1;
+    transition: 0.2s;
+    bottom: 0;
+  }
+
+  .origami:hover{
+    opacity: 0.6;
+    cursor: pointer;
+  }
+
+  .origami5{
+    margin-top: 50px;
+    padding-bottom: 30px;
+    text-align: center;
+  }
+  
+
+  #sideTitleHome{
+    float: right;
+    padding-top: 120px;
+    padding-right: 0px;
+  }
+
+  .pagetitle{
+    align-items: flex-end;
+  }
+  
+  #contactfooter{
+    background-color: #d0db97;
+    height: 40vh;
+    text-align: center;
+    font-size: 100px;
+    font-family: 'mainFont';
+    padding-top: 15vh;
+    letter-spacing: 5px;
+    word-spacing: 10px;
+  }
+
+  #getintouch{
+    color: #dba6af;
+  }
+
+  #getintouch:hover{
+    color: #0824e0;
+    cursor: pointer;
+  }
+
+  #about1{
+    width: 100%;
+    height: 70vh;
+    /* background-image: url(..assets/myBrand/pattern3.png); */
+    background-size: cover;
+    image-rendering: auto;
+    background-color: #e6c6c2;
+        /* text */
+        text-decoration: none;
+        color: #0824e0;
+      font-family: Helvetica;
+      font-size: x-large;
+      word-spacing: 2px;
+      font-weight: 600;
+      letter-spacing: 1px;
+      display: flex;
+
+      }
+
+
+.paragraphText{
+  float: left;
+  font-family: Helvetica;
+  font-size: 19px;
+  font-weight: bold;
+  color: #fefefa;
+  margin-left: 20px;
+  margin-right: 200px;
+  margin-top: 75px;
+  vertical-align: baseline;
+  letter-spacing: 5;
+  line-height: 250%;
+
+
+}
+
+#aboutPageImage{
+  padding-top: 50px;
+  float: right;
+}
+
+#aboutTextColour{
+  padding-top: 20px;
+  color: #0824e0;
+}
+
+/* branding page */
+
+.brandingBody{
+  background-color: #e6c6c2;
+  margin-top: 200px;
+  height: auto;
+}
+
+.galleryContainer{
+  display: grid;
+  width: 75%;
+  margin-left: 20px;
+  margin-bottom: 100px;
+  grid-template-columns: auto auto auto;
+  grid-row: auto;
+  grid-template-areas: "left middle right"
+  "left middle right"
+  "left middle right";
+}
+
+.brandingPageTile{
+  border: #0824e0 solid 1px;
+}
+
+/* This select the img HTML element inside the div with the class of imgContainer */
+.imgContainer img{
+  max-width: 100%;
+}
+
+
+.imgContainer{
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: -25px;
+  cursor: pointer;
+}
+
+.imgContainer :hover{
+opacity: 0.6;
+}
+
+#lowerImage{
+  margin-top: 50px;
+  margin-bottom: -25px;
+}
+
+#galleryTopImage{
+  margin-top: -25px;
+}
+
+#sideTitle{
+  display: grid;
+float: right;
+background-color: #e6c6c2;
+padding-top: auto;
+padding-bottom: auto;
+}
+
+
+
+/* blog page */
+
+.blogBody{
+  margin-top: 150px;
+  height: auto;
+}
+
+.blogDescription{
+  font-family: Helvetica;
+  color: #0824e0;
+  font-size: 20px;
+  letter-spacing: 1px;
+  line-height: 25px;
+  width: 64%;
+  margin-top: 50px;
+  margin-left: 25px;
+  margin-bottom: 50px;
+
+}
+
+.blogContainer{
+  height: auto;
+  width: 65%;
+  margin: 50px 25px;
+}
+
+.blogImg{
+  width: 100%;
+  margin-bottom: 20px;
+  transition: 0.2s;
+  }
+
+  .blogImg:hover{
+    opacity: 0.7;
+  }
+
+  #sideTitleBlog{
+    display: grid;
+    float: right;
+    background-color: transparent;
+    padding-top: 100px;
+  }
+
+
+
+
+
+/* websites page */
+
+.websitesBody{
+  height: 120vh;
+
+}
+
+/* new carousel */
+
+.mySlides {display: none}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 80%;
+  position: relative;
+  margin: 0 auto;
+  margin-top: 150px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  padding: 8px 12px;
+  width: 100%;
+  height: auto;
+  text-align: left;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #dba6af;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #fefefa;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1s;
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+
+.websitesDescription{
+  height: auto;
+  display: flex;
+  width: 100%;
+}
+
+#sideTitleWebsites{
+  display: grid;
+float: right;
+background-color: #e6c6c2;
+padding-top: 60px;
+}
+
+.websitesDescription{
+ margin-top: 30px;
+}
+
+.visitSite{
+  padding-top: 20px;
+  font-family: 'MainFont';
+  color: #fefefa;
+  font-size: 20px;
+  text-align: right;
+}
+
+.Title{
+  margin-top: 10px;
+  font-family: 'MainFont';
+  color: #0824e0;
+  font-size: 30px;
+}
+
+.paragraphStyle{
+  margin-top: 20px;
+  font-family: 'Helvetica';
+  color: #fefefa;
+  font-size: 20px;
+}
+
+/* contact page */
+
+.contactTop{
+  margin-top: 100px;
+    display: flex;
+    height: auto;
+    width: 100%;
+    font-family: 'MainFont';
+    justify-content: center;
+}
+
+.contactBody{
+    display: flex;
+    height: auto;
+    width: 100%;
+    font-family: 'MainFont';
+    justify-content: center;
+}
+
+.formContainer{
+    width: 70%;
+    height: auto;
+    background-color: transparent;
+    margin-top: 50px;
+}
+
+#planeLogo{
+  display: flex;
+  width: 80%;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.planeAndTitle{
+width: 70%;
+height: auto;
+}
+
+.contactTitle{
+  font-size: 50px;
+    color:#0824e0;
+    text-align: right;
+    padding-bottom: 40px;
+}
+
+.formContainer > form{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    font-size: 28px;
+    justify-content: space-around;
+    font-family: 'Helvetica';
+}
+
+.formContainer > form > input,
+.formContainer > form > textarea{
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 0px;
+    border: #e6c6c2 1px solid;
+    margin: 10px;
+    }
+
+
+.formContainer > form > input:focus,
+.formContainer > form > textarea:focus{
+border-color: #0824e0;
+border-width: 1.5px;
+}
+
+#nameField, #emailField{
+    height: 15%;
+}
+
+#messageField{
+    resize: none;
+    font-family: 'Helvetica';
+    margin-bottom: 20px;
+}
+
+#submitButton{
+    font-family: 'MainFont';
+    letter-spacing: 3px;
+    font-size: 25px;
+    background-color: #0824e0;
+    color: #d0db97;
+    transition: background-color 0.2s;
+}
+     
+#submitButton:hover{
+    background-color: #d0db97;
+    color: #0824e0;
+}
+
+.details{
+  font-size: 18px;
+  font-family: Helvetica;
+  color: #fefefa;
+  margin-left: 10px;
+}
+
+/* checkbox */
+
+ /* Customize the label (the container) */
+ .checkboxContainer {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.checkboxContainer input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #fefefa;
+  border: #0824e0 0.5px solid;
+  margin-left: 0px;
+}
+
+/* When the checkbox is checked, add a blue background */
+.checkboxContainer input:checked ~ .checkmark {
+  background-color: #d0db97;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.checkboxContainer input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.checkboxContainer .checkmark:after {
+  left: 6px;
+  top: 2px;
+  width: 5px;
+  height: 10px;
+  border: solid #0824e0;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+label{
+  -webkit-appearance: none;
+  font-size: 18px;
+  font-family: Helvetica;
+  color: #fefefa;
+  margin-left: 10px;
+}
+
+
+
+/* footer */
+
+footer{
+  padding-top: 15px;
+  background-color: #e6c6c2;
+  padding-bottom: 20px;
+}
+
+.socialMedia{
+  font-size: 30px;
+  text-align: center;
+  padding: 10px;
+}
+
+.socialMedia > a{
+  text-decoration: none;
+  color:#fefefa;
+  transition: 0.2s color;
+}
+
+.socialMedia > a:hover{
+  color: #0824e0;
+}
+
+.copyrightInfo{
+  text-decoration: none;
+  font-family: Helvetica;
+  font-size: 15px;
+  color:#fefefa;
+  text-align: center;
+}
+
+.footerLogo{
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+/* project page */
+
+.projectBody{
+  height: auto;
+  width: 100%;
+  padding-bottom: 100px;
+}
+
+.projectImageContainer{
+  width: auto;
+  max-height: 500px;
+  margin-top: 150px;
+  text-align: center;
+}
+
+
+.projectImage{
+  width: 100%;
+  height: auto;
+  margin: auto;
+  display: flex;
+  margin-top: 120px;
+}
+
+.projectDescription{
+  padding-top: 25px;
+  max-width: 65%;
+  display: flex;
+  flex-direction: column;
+  margin: auto auto;
+}
+
+.returnButton{
+  text-align: center;
+  padding-top: 40px;
+  font-family: 'MainFont';
+  color: #0824e0;
+  font-size: 30px;
+}
+
+#return:hover{
+  cursor: pointer;
+}
+
+
+@media only screen and (max-width: 1100px){
+  .origami{
+    max-height: 350px;
+  }
+
+  .homePage{
+    width: 95%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 50px;
+    margin-top: 150px;
+    border: none;
+  }
+
+  .homepageImage{
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .prev, .next {
+    top: 35%;
+  }
+
+}
+
+@media only screen and (max-width: 1001px){
+
+ #sideTitleWebsites{
+    display: none;
+  }
+
+  .slideshow-container {
+    max-width: 80%;
+  }
+
+
+}
+
+@media only screen and (max-width: 850px){  
+
+  #sideTitle{
+    display: none;
+  }
+
+  
+
+  .foldingImages{
+    display: block;
+    text-align: center;
+    max-width: 90%;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "left right"
+  "left right"
+  "left right";
+  justify-content: space-between;
+  align-content: bottom;
+  overflow: hidden;
+  }
+
+
+.logo{
+ max-width: 500px;
+}
+
+.frontLogo{
+  max-width: 500px;
+ }
+
+.burgerIcon{
+  font-size: 40px;
+}
+
+#contactfooter{
+  height: auto;
+  font-size: 75px;
+  font-family: 'mainFont';
+  padding: 50px;
+  letter-spacing: 4px;
+  word-spacing: 8px;
+}
+
+/* branding page */
+
+.galleryContainer{
+  margin: 50px auto;
+  width: 95%;
+}
+
+.imgContainer{
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  cursor: pointer;
+  padding: 0;
+  /* border: solid #0824e0 1px; */
+}
+
+
+#lowerImage{
+  margin-top: 15px;
+  margin-bottom: -15px;
+}
+
+#galleryTopImage{
+  margin-bottom: -15px;
+}
+
+
+/* blog page */
+
+.blogContainer{
+  width: 90%;
+  margin: auto 20px;
+}
+
+.blogImg{
+  margin: auto 15px;
+  text-align: center;
+}
+
+.blogDescription{
+  font-size: 15px;
+  line-height: 20px;
+}
+
+#sideTitleBlog{
+  display: none;
+}
+
+.formContainer{
+  height: auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  overflow: hidden;
+}
+
+.plandAndTitle{
+  margin-bottom: 100px;
+}
+
+}
+
+@media only screen and (max-width: 650px){
+  .logo{
+    max-width: 400px;
+  }
+
+  .frontLogo{
+    max-width: 400px;
+  }
+
+  nav{
+    width: 98%;
+    height: auto;
+    padding: 10px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+
+  }
+
+  .mainnav{
+padding-top: 10px;
+padding-left: 20px;
+padding-right: 20px;
+  }
+
+  .navPageTitles{
+    text-align: center;
+    font-size: 18px;
+    word-spacing: 3px;
+    overflow: hidden;
+  }
+
+  .closeButton{
+    color: #0824e0;
+    font-size: 15px;
+  }
+
+
+  .imgContainer{
+    margin-left: 7px;
+    margin-right: 7px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  
+  
+  #lowerImage{
+    margin-top: 0px;
+    padding-top: 0px;
+    margin-bottom: 0px;
+  }
+  
+  #galleryTopImage{
+    margin-top: 0px;
+  }
+
+  .Title{
+    margin-top: 10px;
+    font-family: 'MainFont';
+    color: #0824e0;
+    font-size: 20px;
+  }
+
+  .previewtextleft{
+    margin-left: 40px;
+    margin-right: 55px;
+    padding-top: 30px;
+    word-spacing: normal;
+    text-align: center;
+    font-weight: bold;
+    color: #e6c6c2;
+    line-height: 20px;
+  }
+
+  .prev, .next {
+    top: 20%;
+  }
+
+}
+
+@media only screen and (max-width: 550px){
+
+  nav{
+    overflow: hidden;
+  }
+
+  nav{
+      background-image: url("../assets/myBrand/pattern3.png");
+      background-size: cover;
+    image-rendering: auto;
+      background-color:#fefefa;
+  }
+
+  .navPageTitles{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "left right"
+    "left center right";
+    font-size: 23px;
+    word-spacing: 2px;
+    margin: auto;
+    padding: 10px;
+  }
+
+  #navBrandingBtn{
+    text-align: right;
+    margin-right: 25px;
+    margin-bottom: 5px;
+  }
+
+  #navBlogBtn{
+    text-align: right;
+    margin-right: -25px;
+    margin-bottom: 5px;
+  }
+
+  #navWebsitesBtn{
+    text-align: left;
+    margin-left: -20px;
+    margin-bottom: 5px;
+  }
+
+  #navContactBtn{
+    text-align: left;
+    margin-left: 30px;
+    margin-bottom: 5px;
+  }
+
+  .closeButton{
+    font-size: 23px;
+    text-align: right;
+    margin-right: -120px;
+  }
+
+  #viewall{
+    display: block;
+    margin-top: 5px;
+   margin-bottom: 10px;
+    font-family: 'mainFont';
+    font-size: 15px;
+    color: #e6c6c2;
+    word-spacing: normal;
+    text-align: left;
+
+  }
+
+  .previews p{
+    display: none;
+  }
+
+  .previewtextright{
+    margin-right: 10px;
+  }
+
+  .previewtextleft img{
+    text-align: right;
+  }
+
+
+  .previewimage{
+    border: #0824e0 solid;
+    background-color: #e6c6c2;
+    border-width: 1px;
+    opacity: 0.8;
+    height: 125px;
+    width: 125px;
+
+  }
+
+  .navBarTitle{
+    font-size: 20px;
+  }
+  
+}
+
+@media only screen and (max-width: 400px){  
+
+.homePage{
+  width: 80%;
+  height: auto;
+  display: block;
+  margin-bottom: 50px;
+  margin-top: 150px;
+  border: none;
+}
+
+body{
+  height: auto;
+}
+
+#homeSection1{
+  height: autox;
+}
+
+}
+
+
+@media only screen and (max-width: 480px){  
+
+.logo{
+  max-width: 320px;
+}
+
+.frontLogo{
+  max-width: 320px;
+}
+
+
+.burgerIcon{
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+#origami{
+  max-width: 50%;
+}
+
+.homePage{
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.galleryContainer{
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+  margin-left: 20px;
+  margin-bottom: 100px;
+  margin-right: 0px;
+}
+
+.imgContainer{
+
+  max-width: 100%;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  cursor: pointer;
+  /* border: solid #0824e0 1px; */
+}
+
+#galleryTopImage{
+  margin-top: 0px;
+  margin-bottom: 0px;
+  
+}
+
+.blogContainer{
+  width: 95%;
+  margin: auto auto;
+}
+
+.blogImg{
+  margin: auto auto;
+}
+
+.blogDescription{
+  font-size: 12px;
+  line-height: 18px;
+}
+
+#sideTitle{
+  display: block;
+}
+
+.contactTitle{
+  font-size: 30px;
+}
+
+  .contactTop{
+    margin-top: 65px;
+  }
+
+
+}
+
+
+
+@media only screen and (max-width: 380px){  
+  .logo{
+    max-width: 250px;
+  }
+
+  .frontLogo{
+    max-width: 250px;
+  }
+  }
+
+
