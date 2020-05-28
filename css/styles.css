@@ -1127,6 +1127,11 @@ padding-left: 20px;
 padding-right: 5px;
   }
 
+  .contactNavText{
+    margin-bottom: 5px;
+    margin-top: 40px;
+  }
+
   .navPageTitles{
     text-align: center;
     font-size: 18px;
