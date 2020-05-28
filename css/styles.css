@@ -107,7 +107,7 @@ body {
     margin-top: 10px;
     padding-left: 40px;
     padding-top: 30px;
-    padding-right: 10px;
+    padding-right: 5px;
     background: #fefefa;
   /* transitions */
   transition: right 0.5s ease;
@@ -127,6 +127,7 @@ body {
     font-weight: 600;
     letter-spacing: 3px;
     align-items: left;
+    width: auto;
   }
 
   .closeButton{
@@ -143,9 +144,10 @@ body {
     right: -650px;
   }
 
-  /* .mainnav{
-    transition: right 0.5s ease;
-  } */
+  .mainnav{
+   padding-right: 0;
+  }
+  
 
 
   /* nav bar 'branding' dropdown */
