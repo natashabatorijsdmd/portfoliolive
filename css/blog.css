@@ -62,9 +62,9 @@ header{
 
   .archetyping{
     display: flex;
-    max-width: 100%;
+    max-width: 75%;
+    margin: auto;
     margin-top: 50px;
-    justify-content: center;
 
 }
 
