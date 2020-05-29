@@ -922,9 +922,11 @@ footer{
 
 .projectImageContainer{
   width: auto;
-  max-height: 500px;
+  max-width: 75%;
+  margin: auto;
   margin-top: 150px;
   text-align: center;
+
 }
 
 
@@ -945,11 +947,15 @@ footer{
 }
 
 .returnButton{
+  display: block;
   text-align: center;
   padding-top: 40px;
-  font-family: 'MainFont';
   color: #0824e0;
-  font-size: 30px;
+}
+
+#return{
+  text-align: center;
+  max-width: 35%;
 }
 
 #return:hover{
@@ -1003,7 +1009,9 @@ footer{
     display: none;
   }
 
-  
+  #return{
+    max-width: 50%;
+  }
 
   .foldingImages{
     display: block;
@@ -1380,6 +1388,10 @@ body{
 
   .contactTop{
     margin-top: 65px;
+  }
+
+  #return{
+    max-width: 60%;
   }
 
 
