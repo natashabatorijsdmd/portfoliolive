@@ -191,6 +191,7 @@ header{
 
     .videoAndCaption{
       text-align: center;
+      width: 100%;
     }
 
     /* footer */
