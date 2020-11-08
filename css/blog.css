@@ -35,12 +35,12 @@ a:link {
   }
   
   a:visited{
-    color: #fefefa;
+    color: #0824e0;
     text-decoration: none;
   }
   
   a:hover{
-    color: #0824e0;
+    color: #d0db97;
     text-decoration: none;
   }
   
@@ -180,6 +180,42 @@ header{
         line-height: 22.1px;
         padding-left: 40px;
         padding-right: 40px;
+    }
+
+    h2{
+        font-size: 16px;
+        color: #0824e0;
+        text-align: right;
+    }
+
+    h3{
+      font-size: 18px;
+        color: #e6c6c2;
+        text-align: center;
+    }
+
+    ul{
+      list-style: none;
+    }
+
+    ul li::before {
+      content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+      color: #0824e0; /* Change the color */
+      font-weight: bold; /* If you want it to be bold */
+      display: inline-block; /* Needed to add space between the bullet and the text */
+      width: 1em; /* Also needed for space (tweak if needed) */
+      margin-left: -1em; /* Also needed for space (tweak if needed) */
+      font-size: 34px;
+      padding-left: 10px;
+    }
+
+    li{
+      margin-bottom: 15px;
+    }
+
+    .reviewList{
+      background-color: #ebebeb ;
+      padding: 40px;
     }
 
     .subheading{
