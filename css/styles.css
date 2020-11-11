@@ -11,6 +11,16 @@
   font-weight: normal;
 }
 
+.hide{
+  /* Hides and element with a class of hide */
+  display: none;
+}
+
+.menuBTN{
+  color: #0824e0;
+  border: none;
+  font-size: 60px;
+}
 
 /* link styling */
 
@@ -62,6 +72,7 @@ header{
 }
 
 .burgerIconContainer{
+  z-index: 6000;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -100,15 +111,11 @@ body {
   nav{
     position: absolute;
     z-index: 5000;
-    top: 0;
-    right: 0;
-    width: auto;
-    height: auto;
+    width: 100vw;
+    height: 100vh;
     display: block;
-    margin-top: 100px;
-    padding: 30px;
-    padding-right: 50px;
-    background: none;
+    margin-top: none;
+    background: rgba(255, 255, 255, 0.85);
 
   /* transitions */
   transition: right 0.5s ease;
@@ -122,15 +129,14 @@ body {
     cursor: pointer;
     text-decoration: none;;
     font-family: 'MainFont';
-    font-size: 22px;
+    font-size: 50px;
     word-spacing: 5px;
     font-weight: 600;
     letter-spacing: 3px;
-    text-align: right;
+    text-align: center;
     width: auto;
     line-height: 60px;
-    padding-right: 40px;
-    
+    padding-top: 30vh;
   }
 
   .closeButton{
@@ -144,35 +150,12 @@ body {
 
   
   .mainnav-closed{
-    right: -650px;
+    right: -2500px;
   }
 
   .mainnav{
    padding-right: 0;
   }
-  
-
-
-  /* nav bar 'branding' dropdown */
-
-  /* overall style of dropdown page*/
-  
-  .navPageTriggersActive{
-    color: #d0db97;
-    text-decoration: underlinez;
-    }
-
-  .navBarTitle{
-    font-family: 'mainFont';
-    color: #0824e0;
-    padding-bottom: 10px;
-    font-size: 25px;
-    letter-spacing: 1px;
-  }
-
-  .navBarTitle:hover{
-    color: #d0db97;
-  } 
 
 
   /* landing page section */

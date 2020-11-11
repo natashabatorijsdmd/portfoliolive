@@ -7,6 +7,7 @@
     <meta name="keywords" content="Branding, web design, tech blog">
     <meta name="description" content="Design & Code - professional and experimental. Check out our blog!">
     <meta name="author" content="Archetype Designs">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="css/styles.css">
     <title>ARCHETYPE DESIGNS</title>
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" 
@@ -21,12 +22,12 @@
         <a href="index.html"> <img class="frontLogo" src="assets/myBrand/frontHeaderLogo.png" alt="ARCHETYPE DESIGNS"></a>
       </div>
       <div class="burgerIconContainer"> 
-        <button class="burgerIcon" id="mobile-nav-btn">
-            <i class="fa fa-bars" aria-hidden="true"></i>
-        </button>
-    </div>
+        <i class="fas fa-times hide menuBTN" id="close"></i>
+          <i class="fas fa-bars menuBTN" id="open"></i>
+      </div>
+
       <!-- navigation menu -->
-      <nav class="mainnav mainnav-closed">
+      <nav class="mainnav">
         <div class="navPageTitles">
           <a href="branding.html">BRANDING</a>
           <br>
@@ -36,7 +37,6 @@
           <br>
           <a href="contact.html"> CONTACT </a>
           <br>
-          <a class="closeButton" id="mobile-nav-btn-closed">X</a>
         </div>
       </nav>
       
