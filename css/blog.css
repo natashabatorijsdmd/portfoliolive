@@ -105,6 +105,7 @@ header{
 
 .blogImage > img {
     border: #0824e0 2px solid;
+    max-width: 100%;
 }
 
 .imageCaption{
@@ -267,11 +268,20 @@ footer{
   }
 
 
-  @media only screen and (max-width: 480px){  
+  @media only screen and (max-width: 600px){  
 
     .blogMainImage img{
       max-width: 80%;
     }
+
+    .archetyping{
+      display: flex;
+      max-width: 100%;
+      max-height: 200px;
+      margin: auto;
+      margin-top: 50px;
+      margin-bottom: none;
+    }  
 
     .blogTitle{
       font-size: 18px;
@@ -289,9 +299,30 @@ footer{
 
 .blogText{
   font-size: 12px;
-  max-width: 70%;
+  max-width: 80%;
   padding: 0px;
 
+}
+
+.imageAndCaption{
+  max-width: 100%;
+  justify-content: center;
+  margin: auto auto;
+}
+
+.blogImage{
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    
+    justify-content: center;
+}
+
+.blogImage > img {
+    border: #0824e0 2px solid;
+    max-width: 100%;
+    justify-content: center;
+    
 }
 
 .specialText{
@@ -306,10 +337,28 @@ footer{
 
 .blogContent{
   margin-top: 50px;
+  max-width: 100%;
+  padding: none;
   }
 
   .returnButton{
     font-size: 14px;
+  }
+
+  .reviewList{
+    max-width: 100%;
+    padding: 20px;
+  }
+
+  ul li::before {
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: #0824e0; /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+    font-size: 22px;
+    padding-left: 10px;
   }
 
   }
