@@ -1,7 +1,20 @@
+var mobileNavBTN = document.querySelector('#mobile-nav-btn');
+var mobileNavBTNclose = document.querySelector('#mobile-nav-btn-closed');
+var navigationList = document.querySelector('.mainnav');
+
 var openBTN = document.querySelector('#open');// selects element with id of open
 var closeBTN = document.querySelector('#close');//selects element with id of close
-
 var buttons = document.querySelectorAll('.menuBTN');//selects all elements with a class of menuBTN
+
+mobileNavBTN.addEventListener('click', function () {
+    navigationList.classList.remove('mainnav-closed');
+    console.log(navigationList.classList);
+})
+
+mobileNavBTNclose.addEventListener('click', function () {
+    navigationList.classList.add('mainnav-closed');
+    console.log(navigationList.classList);
+})
 
 //foreach cycles through all buttons selected above
 buttons.forEach(button => {
@@ -13,7 +26,9 @@ buttons.forEach(button => {
 });
 
 
-//website page slideshow
+
+
+console.log('hello')
 
 var slideIndex = 1;
 showSlides(slideIndex);
